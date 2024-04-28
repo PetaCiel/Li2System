@@ -15,8 +15,8 @@ client = discord.Client(intents=intents)
 state0 = discord.Activity(name='🟥🟥|施錠|🟥🟥', type=discord.ActivityType.watching)
 state1 = discord.Activity(name='🟩🟩|開錠|🟩🟩', type=discord.ActivityType.watching)
 state2 = discord.Activity(name='🛑🛑|メンテ中だお|🛑🛑', type=discord.ActivityType.watching)
-
 #RPI.GPIOのGPIO宣言
+#18,23は仮,用途に応じて変更
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(23, GPIO.IN, pull_up_down=GPIO.PUD_UP)
