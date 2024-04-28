@@ -15,6 +15,7 @@ client = discord.Client(intents=intents)
 state0 = discord.Activity(name='🟥🟥|施錠|🟥🟥', type=discord.ActivityType.watching)
 state1 = discord.Activity(name='🟩🟩|開錠|🟩🟩', type=discord.ActivityType.watching)
 state2 = discord.Activity(name='🛑🛑|メンテ中だお|🛑🛑', type=discord.ActivityType.watching)
+
 #RPI.GPIOのGPIO宣言
 #18,23は仮,用途に応じて変更
 GPIO.setmode(GPIO.BCM)
@@ -73,7 +74,6 @@ async def on_message(message):
 #Discord.pyのrun,譲渡する際はTokenを'token'に変更
 #('token')にトークンを''で入力
 client.run('token')
-
 
 
 
